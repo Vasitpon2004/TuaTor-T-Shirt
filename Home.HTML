@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuaTor-T-Shirt | หน้าแรก</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: { DEFAULT: '#265A34', light: '#3a824e', dark: '#1b4025' },
+              surface: '#F4EBC4',
+              background: '#FAF7EC',
+              textMain: '#2D3748',
+              textLight: '#718096'
+            },
+            fontFamily: { sans: ['Outfit', 'sans-serif'] }
+          }
+        }
+      }
+    </script>
+    <style>
+        .animate-slideInLeft { animation: slideInLeft 1s ease-out; }
+        .animate-slideInRight { animation: slideInRight 1s ease-out; }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+    </style>
+</head>
+
+<body class="bg-background text-textMain leading-[1.6] antialiased">
+
+    <!-- Navigation -->
+    <header class="bg-white/90 backdrop-blur-[10px] fixed w-full top-0 z-[1000] shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-all duration-300">
+        <div class="max-w-[1200px] mx-auto flex justify-between items-center py-5 px-10">
+            <a href="Home.HTML" class="text-[28px] font-extrabold text-primary no-underline tracking-[-0.5px]">TuaTor.</a>
+            
+            <ul class="hidden lg:flex gap-10 list-none">
+                <li><a href="Home.HTML" class="group relative text-primary font-medium text-[16px] transition-colors duration-300">หน้าแรก
+                    <span class="absolute w-full h-[2px] bg-primary -bottom-1.5 left-0"></span>
+                </a></li>
+                <li><a href="#" class="group relative text-textMain font-medium text-[16px] transition-colors duration-300 hover:text-primary">สินค้าทั้งหมด
+                    <span class="absolute w-0 h-[2px] bg-primary -bottom-1.5 left-0 transition-all duration-300 group-hover:w-full"></span>
+                </a></li>
+                <li><a href="#" class="group relative text-textMain font-medium text-[16px] transition-colors duration-300 hover:text-primary">คอลเลกชันใหม่
+                    <span class="absolute w-0 h-[2px] bg-primary -bottom-1.5 left-0 transition-all duration-300 group-hover:w-full"></span>
+                </a></li>
+                <li><a href="#" class="group relative text-textMain font-medium text-[16px] transition-colors duration-300 hover:text-primary">โปรโมชั่น
+                    <span class="absolute w-0 h-[2px] bg-primary -bottom-1.5 left-0 transition-all duration-300 group-hover:w-full"></span>
+                </a></li>
+            </ul>
+            
+            <div class="flex gap-5">
+                <a href="#" class="text-textMain text-[24px] transition-all duration-300 hover:text-primary hover:-translate-y-0.5"><i class='bx bx-search'></i></a>
+                <a href="#" class="text-textMain text-[24px] transition-all duration-300 hover:text-primary hover:-translate-y-0.5 relative">
+                    <i class='bx bx-shopping-bag'></i>
+                    <span class="absolute -top-2 -right-2 bg-[#E53E3E] text-white text-[11px] font-bold h-[18px] w-[18px] rounded-full flex items-center justify-center border-2 border-white">2</span>
+                </a>
+                <a href="Login.HTML" class="text-textMain text-[24px] transition-all duration-300 hover:text-primary hover:-translate-y-0.5"><i class='bx bx-user'></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-[1200px] mx-auto pt-[160px] pb-[100px] px-10 flex flex-col lg:flex-row items-center justify-between gap-[50px]">
+        <div class="flex-1 animate-slideInLeft text-center lg:text-left">
+            <h1 class="text-[42px] sm:text-[56px] font-extrabold text-primary-dark leading-[1.15] mb-5">เสื้อยืดสไตล์มินิมอล ใส่สบาย ในแบบที่เป็นคุณ</h1>
+            <p class="text-[18px] text-textLight mb-10 max-w-[500px] mx-auto lg:mx-0">ค้นพบคอลเลกชันเสื้อยืดคุณภาพเยี่ยม ดีไซน์ทันสมัยที่ตอบโจทย์ทุกลุค
+                ไม่ว่าจะเป็นวันชิลๆ หรือวันทำงานที่ต้องการความเรียบง่าย</p>
+            <a href="#shop" class="inline-block py-4 px-9 bg-gradient-to-br from-primary to-primary-light text-white no-underline rounded-full font-semibold text-[16px] shadow-[0_10px_20px_rgba(38,90,52,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_15px_25px_rgba(38,90,52,0.4)]">
+                เลือกซื้อเลย <i class='bx bx-right-arrow-alt align-middle ml-1 text-[20px]'></i>
+            </a>
+        </div>
+        <div class="flex-1 relative animate-slideInRight flex justify-center lg:justify-end">
+            <div class="absolute bg-surface rounded-full blur-[40px] opacity-80 w-[450px] h-[450px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]"></div>
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="T-Shirt Model" class="w-full max-w-[480px] rounded-[30px] shadow-[0_20px_50px_rgba(0,0,0,0.15)] block object-cover relative z-[2]">
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="shop" class="max-w-[1200px] mx-auto mb-[100px] px-10">
+        <h2 class="text-center text-[36px] font-bold text-primary-dark mb-[50px] relative inline-block left-1/2 -translate-x-1/2 after:content-[''] after:absolute after:w-10 after:h-1 after:bg-primary after:-bottom-2.5 after:left-1/2 after:-translate-x-1/2 after:rounded-sm">สินค้ายอดนิยม</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            <!-- Product 1 -->
+            <div class="bg-white rounded-[24px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.05)] transition-all duration-300 border border-black/5 relative cursor-pointer group hover:-translate-y-2.5 hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)]">
+                <div class="absolute top-[15px] left-[15px] bg-surface text-primary-dark px-3 py-1 rounded-full text-[12px] font-bold z-[2] shadow-[0_4px_10px_rgba(0,0,0,0.1)]">ขายดี🔥</div>
+                <div class="w-full h-[300px] relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="White T-Shirt" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <div class="text-[13px] text-textLight uppercase tracking-[1px] mb-2 font-medium">Classic Fit</div>
+                    <div class="text-[18px] font-semibold text-textMain mb-3 whitespace-nowrap overflow-hidden text-ellipsis">เสื้อยืดคอกลม สีขาว Basic</div>
+                    <div class="flex justify-between items-center">
+                        <div class="text-[22px] font-bold text-primary">฿250</div>
+                        <button class="bg-surface text-primary border-none w-11 h-11 rounded-[14px] flex items-center justify-center text-[22px] cursor-pointer transition-all duration-300 hover:bg-primary hover:text-white hover:rotate-12"><i class='bx bx-cart-add'></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white rounded-[24px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.05)] transition-all duration-300 border border-black/5 relative cursor-pointer group hover:-translate-y-2.5 hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)]">
+                <div class="absolute top-[15px] left-[15px] bg-primary text-white px-3 py-1 rounded-full text-[12px] font-bold z-[2] shadow-[0_4px_10px_rgba(0,0,0,0.1)]">ใหม่✨</div>
+                <div class="w-full h-[300px] relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Black T-Shirt" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <div class="text-[13px] text-textLight uppercase tracking-[1px] mb-2 font-medium">Oversize</div>
+                    <div class="text-[18px] font-semibold text-textMain mb-3 whitespace-nowrap overflow-hidden text-ellipsis">เสื้อยืดทรง Oversize สีดำ</div>
+                    <div class="flex justify-between items-center">
+                        <div class="text-[22px] font-bold text-primary">฿390</div>
+                        <button class="bg-surface text-primary border-none w-11 h-11 rounded-[14px] flex items-center justify-center text-[22px] cursor-pointer transition-all duration-300 hover:bg-primary hover:text-white hover:rotate-12"><i class='bx bx-cart-add'></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white rounded-[24px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.05)] transition-all duration-300 border border-black/5 relative cursor-pointer group hover:-translate-y-2.5 hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)]">
+                <div class="w-full h-[300px] relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Green T-Shirt" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <div class="text-[13px] text-textLight uppercase tracking-[1px] mb-2 font-medium">Premium</div>
+                    <div class="text-[18px] font-semibold text-textMain mb-3 whitespace-nowrap overflow-hidden text-ellipsis">เสื้อยืดผลิตจากผ้าฝ้าย สีเขียว Olive</div>
+                    <div class="flex justify-between items-center">
+                        <div class="text-[22px] font-bold text-primary">฿350</div>
+                        <button class="bg-surface text-primary border-none w-11 h-11 rounded-[14px] flex items-center justify-center text-[22px] cursor-pointer transition-all duration-300 hover:bg-primary hover:text-white hover:rotate-12"><i class='bx bx-cart-add'></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-white rounded-[24px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.05)] transition-all duration-300 border border-black/5 relative cursor-pointer group hover:-translate-y-2.5 hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)]">
+                <div class="w-full h-[300px] relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Striped T-Shirt" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <div class="text-[13px] text-textLight uppercase tracking-[1px] mb-2 font-medium">Casual</div>
+                    <div class="text-[18px] font-semibold text-textMain mb-3 whitespace-nowrap overflow-hidden text-ellipsis">เสื้อยืดลายขวางสุดชิค</div>
+                    <div class="flex justify-between items-center">
+                        <div class="text-[22px] font-bold text-primary">฿290</div>
+                        <button class="bg-surface text-primary border-none w-11 h-11 rounded-[14px] flex items-center justify-center text-[22px] cursor-pointer transition-all duration-300 hover:bg-primary hover:text-white hover:rotate-12"><i class='bx bx-cart-add'></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="max-w-[1200px] mx-auto mb-[100px] bg-gradient-to-br from-surface to-[#E8CD8A] rounded-[30px] p-[60px] flex items-center justify-between shadow-[0_20px_40px_rgba(0,0,0,0.05)] relative overflow-hidden">
+        <div class="relative z-[2] max-w-[500px]">
+            <h2 class="text-[40px] text-primary-dark mb-[15px] font-extrabold">ลดกระหน่ำรับซัมเมอร์! ☀️</h2>
+            <p class="text-[16px] text-gray-700 mb-[30px]">ซื้อเสื้อยืด 3 ตัว รับส่วนลดทันที 20% สำหรับทุกคอลเลกชัน จัดส่งฟรีทั่วประเทศเมื่อสั่งซื้อครบ 500 บาท</p>
+            <a href="#" class="inline-block py-4 px-9 bg-primary-dark text-white no-underline rounded-full font-semibold text-[16px] shadow-[0_10px_20px_rgba(38,90,52,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_15px_25px_rgba(38,90,52,0.4)]">ดูรายละเอียดโปรโมชั่น</a>
+        </div>
+        <div class="absolute -right-[50px] -bottom-[100px] w-[400px] h-[400px] bg-white/20 rounded-full z-[1]"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-white pt-[80px] pb-[40px] px-10">
+        <div class="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-[60px]">
+            <div class="lg:col-span-2">
+                <a href="#" class="text-[28px] font-extrabold text-surface no-underline mb-5 inline-block">TuaTor.</a>
+                <p class="text-gray-300 mb-5 max-w-[300px] text-[15px]">สร้างสรรค์สไตล์ที่เป็นคุณด้วยเสื้อยืดคุณภาพสูงที่เราคัดสรรมาอย่างดี เพื่อความสบายในทุกวันของคุณ</p>
+                <div class="flex gap-[15px]">
+                    <a href="#" class="flex items-center justify-center w-10 h-10 bg-white/10 rounded-full text-white text-[20px] no-underline transition-all duration-300 hover:bg-surface hover:text-primary-dark hover:-translate-y-1"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="flex items-center justify-center w-10 h-10 bg-white/10 rounded-full text-white text-[20px] no-underline transition-all duration-300 hover:bg-surface hover:text-primary-dark hover:-translate-y-1"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="flex items-center justify-center w-10 h-10 bg-white/10 rounded-full text-white text-[20px] no-underline transition-all duration-300 hover:bg-surface hover:text-primary-dark hover:-translate-y-1"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="flex items-center justify-center w-10 h-10 bg-white/10 rounded-full text-white text-[20px] no-underline transition-all duration-300 hover:bg-surface hover:text-primary-dark hover:-translate-y-1"><i class='bx bxl-line'></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-[18px] mb-5 text-white font-semibold">เมนูหลัก</h4>
+                <ul class="list-none">
+                    <li class="mb-3"><a href="Home.HTML" class="text-[#ccc] no-underline transition-all duration-300 text-[15px] hover:text-surface hover:pl-1">หน้าแรก</a></li>
+                    <li class="mb-3"><a href="#" class="text-[#ccc] no-underline transition-all duration-300 text-[15px] hover:text-surface hover:pl-1">สินค้าทั้งหมด</a></li>
+                    <li class="mb-3"><a href="#" class="text-[#ccc] no-underline transition-all duration-300 text-[15px] hover:text-surface hover:pl-1">โปรโมชั่น</a></li>
+                    <li class="mb-3"><a href="#" class="text-[#ccc] no-underline transition-all duration-300 text-[15px] hover:text-surface hover:pl-1">เกี่ยวกับเรา</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-[18px] mb-5 text-white font-semibold">ความช่วยเหลือ</h4>
+                <ul class="list-none">
+                    <li class="mb-3"><a href="#" class="text-[#ccc] no-underline transition-all duration-300 text-[15px] hover:text-surface hover:pl-1">การจัดส่งสินค้า</a></li>
+                    <li class="mb-3"><a href="#" class="text-[#ccc] no-underline transition-all duration-300 text-[15px] hover:text-surface hover:pl-1">การคืนสินค้า</a></li>
+                    <li class="mb-3"><a href="#" class="text-[#ccc] no-underline transition-all duration-300 text-[15px] hover:text-surface hover:pl-1">คำถามที่พบบ่อย (FAQ)</a></li>
+                    <li class="mb-3"><a href="#" class="text-[#ccc] no-underline transition-all duration-300 text-[15px] hover:text-surface hover:pl-1">ติดต่อสอบถาม</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-[18px] mb-5 text-white font-semibold">บัญชีของฉัน</h4>
+                <ul class="list-none">
+                    <li class="mb-3"><a href="Login.HTML" class="text-[#ccc] no-underline transition-all duration-300 text-[15px] hover:text-surface hover:pl-1">เข้าสู่ระบบ</a></li>
+                    <li class="mb-3"><a href="Register.HTML" class="text-[#ccc] no-underline transition-all duration-300 text-[15px] hover:text-surface hover:pl-1">สมัครสมาชิก</a></li>
+                    <li class="mb-3"><a href="#" class="text-[#ccc] no-underline transition-all duration-300 text-[15px] hover:text-surface hover:pl-1">ประวัติการสั่งซื้อ</a></li>
+                    <li class="mb-3"><a href="#" class="text-[#ccc] no-underline transition-all duration-300 text-[15px] hover:text-surface hover:pl-1">ตะกร้าสินค้า</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center pt-[30px] border-t border-white/10 text-[#aaa] text-[14px]">
+            <p>&copy; 2026 TuaTor-T-Shirt. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

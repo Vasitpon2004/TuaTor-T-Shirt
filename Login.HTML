@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuaTor-T-Shirt | เข้าสู่ระบบ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: { DEFAULT: '#265A34', light: '#3a824e', dark: '#1b4025' },
+              surface: '#F4EBC4',
+              background: '#FAF7EC'
+            },
+            fontFamily: { sans: ['Outfit', 'sans-serif'] }
+          }
+        }
+      }
+    </script>
+    <style>
+        .animate-fade-in { animation: fadeIn 0.8s ease-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-[#F4EBC4] to-[#F4EBC4] flex justify-center items-center h-screen text-gray-800 antialiased font-sans">
+
+    <div class="bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] w-[420px] max-w-[90%] py-12 px-10 text-center animate-fade-in">
+        <h1 class="text-[32px] mb-1 text-primary font-bold">Welcome Back</h1>
+        <p class="text-gray-500 text-sm mb-[35px]">เข้าสู่ระบบเพื่อดำเนินการต่อที่ TuaTor-T-Shirt</p>
+        
+        <form action="#">
+            <div class="relative mb-5">
+                <i class='bx bx-envelope absolute left-[18px] top-1/2 -translate-y-1/2 text-gray-400 text-[22px]'></i>
+                <input type="email" placeholder="อีเมลของคุณ" required
+                    class="w-full py-4 pr-4 pl-[50px] border-2 border-slate-100 rounded-xl outline-none text-[15px] bg-[#f8fafc] transition-all duration-300 focus:border-primary focus:bg-white focus:ring-[4px] focus:ring-[#2a5298]/10">
+            </div>
+            
+            <div class="relative mb-5">
+                <i class='bx bx-lock-alt absolute left-[18px] top-1/2 -translate-y-1/2 text-gray-400 text-[22px]'></i>
+                <input type="password" placeholder="รหัสผ่าน" required
+                    class="w-full py-4 pr-4 pl-[50px] border-2 border-slate-100 rounded-xl outline-none text-[15px] bg-[#f8fafc] transition-all duration-300 focus:border-primary focus:bg-white focus:ring-[4px] focus:ring-[#2a5298]/10">
+            </div>
+
+            <div class="flex justify-between items-center mb-[30px] text-sm">
+                <label class="text-[#666] flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" class="w-4 h-4 accent-[#2a5298]"> จดจำฉันในระบบ
+                </label>
+                <a href="#" class="text-[#2a5298] font-medium transition-colors hover:text-[#1e3c72] hover:underline">ลืมรหัสผ่าน?</a>
+            </div>
+
+            <button type="submit" 
+                class="w-full py-4 border-none rounded-xl bg-gradient-to-br from-primary to-primary text-white text-[16px] font-semibold cursor-pointer transition-all duration-300 shadow-[0_8px_20px_rgba(42,82,152,0.3)] hover:-translate-y-[3px] hover:shadow-[0_12px_25px_rgba(42,82,152,0.4)] active:translate-y-0">
+                เข้าสู่ระบบ
+            </button>
+        </form>
+
+        <div class="mt-[30px] text-[14px] text-slate-500">
+            ยังไม่มีบัญชีผู้ใช้? <a href="Register.HTML" class="text-[#2a5298] font-semibold ml-1 transition-colors hover:text-[#1e3c72] hover:underline">สมัครสมาชิกที่นี่</a>
+        </div>
+    </div>
+
+</body>
+</html>
